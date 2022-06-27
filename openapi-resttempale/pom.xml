@@ -99,7 +99,7 @@
                             <url>https://petstore3.swagger.io/api/v3/openapi.json</url>
                             <outputFileName>petstore3.json</outputFileName>
                             <!-- default target location, just to demonstrate the parameter -->
-                            <outputDirectory>${project.basedir}</outputDirectory>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
@@ -114,26 +114,25 @@
                 </dependencies>
 
                 <executions>
-<!--                    <execution>-->
-<!--                        -->
-<!--&lt;!&ndash;                        generate petShop API&ndash;&gt;-->
-<!--                        <goals>-->
-<!--                            <goal>generate</goal>-->
-<!--                        </goals>-->
-<!--                        <configuration>-->
-<!--                            <inputSpec>${project.basedir}/petstore3.json</inputSpec>-->
-<!--                            <generatorName>java</generatorName>-->
-<!--                            <library>resttemplate</library>-->
-<!--                            <generateApiTests>true</generateApiTests>-->
-<!--                            <generateModelTests>false</generateModelTests>-->
-<!--                            <packageName>org.anystub.examples.gen</packageName>-->
-<!--                            <apiPackage>org.anystub.examples.gen</apiPackage>-->
-<!--                            <configOptions>-->
-<!--                                <java8>true</java8>-->
-<!--                                <testOutput>${project.build.directory}/generated-test-sources/openapi</testOutput>-->
-<!--                            </configOptions>-->
-<!--                        </configuration>-->
-<!--                    </execution>-->
+                    <execution>
+<!--                        generate petShop API-->
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <inputSpec>${project.build.directory}/petstore3.json</inputSpec>
+                            <generatorName>java</generatorName>
+                            <library>resttemplate</library>
+                            <generateApiTests>false</generateApiTests>
+                            <generateModelTests>false</generateModelTests>
+                            <packageName>org.anystub.examples.gen</packageName>
+                            <apiPackage>org.anystub.examples.gen</apiPackage>
+                            <configOptions>
+                                <java8>true</java8>
+                                <testOutput>${project.build.directory}/generated-test-sources/openapi</testOutput>
+                            </configOptions>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
 
