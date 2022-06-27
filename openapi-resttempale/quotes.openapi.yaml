@@ -3558,6 +3558,11 @@ components:
               description: Length of the quote string.
               format: int32
               type: integer
+            date:
+              description: date of something
+              type: string
+              format: date
+
     NewQuote:
       properties:
         author:
