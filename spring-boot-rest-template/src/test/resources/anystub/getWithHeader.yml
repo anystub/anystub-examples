@@ -1,0 +1,18 @@
+request0:
+  exception: []
+  keys: [GET, HTTP/1.1, 'Accept: text/plain, application/json, application/*+json,
+      */*', 'http://localhost:61887/api/random']
+  values: [HTTP/1.1, '200', OK, 'Matched-Stub-Id: c380dbe3-1037-46ef-9f2d-773323b26517',
+    'Vary: Accept-Encoding, User-Agent', 'Transfer-Encoding: chunked', '{"test":"ok"}']
+request1:
+  exception: []
+  keys: [GET, HTTP/1.1, 'Accept: text/plain, application/json, application/*+json,
+      */*', 'http://localhost:53508/api/random']
+  values: [HTTP/1.1, '200', OK, 'Matched-Stub-Id: a2c71230-c14b-4e0a-92b2-9cdc475a0345',
+    'Vary: Accept-Encoding, User-Agent', 'Transfer-Encoding: chunked', '{"test":"ok"}']
+request2:
+  exception: []
+  keys: [GET, HTTP/1.1, 'Accept: text/plain, application/json, application/*+json,
+      */*', 'http://localhost:49507/api/random']
+  values: [HTTP/1.1, '200', OK, 'Matched-Stub-Id: 73a2b3bc-dadb-431a-be08-0b6da65ff400',
+    'Vary: Accept-Encoding, User-Agent', 'Transfer-Encoding: chunked', '{"test":"ok"}']

@@ -1,0 +1,6 @@
+request0:
+  exception: [org.apache.http.conn.HttpHostConnectException, 'Connect to localhost:8080
+      [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused:
+      connect']
+  keys: [POST, HTTP/1.1, 'http://localhost:8080/api/random/xxx', some text... suffix]
+  values: []

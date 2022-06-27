@@ -1,0 +1,46 @@
+request0:
+  exception: []
+  keys:
+  - POST
+  - HTTP/1.1
+  - http://localhost:61189/api/random/xxx
+  - |-
+    {test:1,
+    test2:3}
+  values: [HTTP/1.1, '400', Bad Request, 'Content-Type: application/json', 'Matched-Stub-Id:
+      43e80a0f-497b-46b3-a868-b17dadfb851a', 'Transfer-Encoding: chunked', error]
+request1:
+  exception: []
+  keys:
+  - POST
+  - HTTP/1.1
+  - http://localhost:61189/api/random/xxx
+  - |-
+    {test:1,
+
+    test2:3}
+  values: [HTTP/1.1, '400', Bad Request, 'Content-Type: application/json', 'Matched-Stub-Id:
+      43e80a0f-497b-46b3-a868-b17dadfb851a', 'Transfer-Encoding: chunked', error]
+request2:
+  exception: []
+  keys:
+  - POST
+  - HTTP/1.1
+  - http://localhost:49507/api/random/xxx
+  - |-
+    {test:1,
+    test2:3}
+  values: [HTTP/1.1, '400', Bad Request, 'Content-Type: application/json', 'Matched-Stub-Id:
+      2134c25c-0aef-4acf-9f59-19c12a251944', 'Transfer-Encoding: chunked', error]
+request3:
+  exception: []
+  keys:
+  - POST
+  - HTTP/1.1
+  - http://localhost:49507/api/random/xxx
+  - |-
+    {test:1,
+
+    test2:3}
+  values: [HTTP/1.1, '400', Bad Request, 'Content-Type: application/json', 'Matched-Stub-Id:
+      2134c25c-0aef-4acf-9f59-19c12a251944', 'Transfer-Encoding: chunked', error]

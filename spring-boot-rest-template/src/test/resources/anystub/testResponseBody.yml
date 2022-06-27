@@ -1,0 +1,12 @@
+request0:
+  exception: []
+  keys: [GET, HTTP/1.1, 'http://localhost:64787']
+  values: [HTTP/1.1, '200', OK, 'Content-Type: application/octet-stream', 'Matched-Stub-Id:
+      c43b00a2-aeb8-49f8-aa4d-a02c84fb1819', 'Vary: Accept-Encoding, User-Agent',
+    'Transfer-Encoding: chunked', response plain string]
+request1:
+  exception: []
+  keys: [GET, HTTP/1.1, 'http://localhost:49507']
+  values: [HTTP/1.1, '200', OK, 'Content-Type: application/octet-stream', 'Matched-Stub-Id:
+      33f2da23-7233-4f10-9654-b7273b99c380', 'Vary: Accept-Encoding, User-Agent',
+    'Transfer-Encoding: chunked', response plain string]

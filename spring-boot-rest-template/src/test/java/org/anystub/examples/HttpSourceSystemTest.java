@@ -5,6 +5,7 @@ import com.github.tomakehurst.wiremock.junit5.WireMockTest;
 import org.anystub.AnySettingsHttp;
 import org.anystub.AnyStubId;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 
@@ -13,15 +14,12 @@ import static com.github.tomakehurst.wiremock.client.WireMock.stubFor;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
-//@WireMockTest(httpPort = 8080)
+@WireMockTest(httpPort = 8080)
 class HttpSourceSystemTest {
 
 
-    private final HttpSourceSystem httpSourceSystem;
-
-    HttpSourceSystemTest(HttpSourceSystem httpSourceSystem) {
-        this.httpSourceSystem = httpSourceSystem;
-    }
+    @Autowired
+    HttpSourceSystem httpSourceSystem;
 
     @Test
     @AnyStubId

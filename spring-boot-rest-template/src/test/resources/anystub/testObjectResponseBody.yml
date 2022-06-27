@@ -1,0 +1,12 @@
+request0:
+  exception: []
+  keys: [GET, HTTP/1.1, 'http://localhost:64199/y']
+  values: [HTTP/1.1, '200', OK, 'Content-Type: application/json', 'Matched-Stub-Id:
+      4dd92acd-2c23-42a5-8b4e-34e9e6539095', 'Vary: Accept-Encoding, User-Agent',
+    'Transfer-Encoding: chunked', '{"id":234,"msg" : "test msg",   "localDate" : "2022-02-02"}']
+request1:
+  exception: []
+  keys: [GET, HTTP/1.1, 'http://localhost:49507/y']
+  values: [HTTP/1.1, '200', OK, 'Content-Type: application/json', 'Matched-Stub-Id:
+      dc521c48-035d-4923-980d-9853ae2d7e30', 'Vary: Accept-Encoding, User-Agent',
+    'Transfer-Encoding: chunked', '{"id":234,"msg" : "test msg",   "localDate" : "2022-02-02"}']

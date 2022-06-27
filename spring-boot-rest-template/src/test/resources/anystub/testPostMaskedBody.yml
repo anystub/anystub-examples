@@ -1,0 +1,10 @@
+request0:
+  exception: []
+  keys: [POST, HTTP/1.1, 'http://localhost:63612/api/random/xxx', some text... suffix]
+  values: [HTTP/1.1, '400', Bad Request, 'Content-Type: application/json', 'Matched-Stub-Id:
+      01be8122-34b6-4859-a4fd-ee512bf44c1f', 'Transfer-Encoding: chunked', error]
+request1:
+  exception: []
+  keys: [POST, HTTP/1.1, 'http://localhost:49507/api/random/xxx', some text... suffix]
+  values: [HTTP/1.1, '400', Bad Request, 'Content-Type: application/json', 'Matched-Stub-Id:
+      d98c82f3-3a82-432c-af9c-58f33386ccd9', 'Transfer-Encoding: chunked', error]

@@ -1,0 +1,11 @@
+request0:
+  exception: [org.apache.http.conn.HttpHostConnectException, 'Connect to localhost:8080
+      [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused:
+      connect']
+  keys: [POST, HTTP/1.1, 'http://localhost:8080/api/random/xxx', BASE64 AQIDBA==]
+  values: []
+request1:
+  exception: []
+  keys: [POST, HTTP/1.1, 'http://localhost:62339/api/random/xxx', BASE64 AQIDBA==]
+  values: [HTTP/1.1, '200', OK, 'Matched-Stub-Id: 75fd9586-b43b-4610-b426-edd3fb9a78c0',
+    'Vary: Accept-Encoding, User-Agent', 'Transfer-Encoding: chunked', '']
