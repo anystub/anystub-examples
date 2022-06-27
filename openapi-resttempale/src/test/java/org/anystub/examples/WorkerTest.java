@@ -1,5 +1,6 @@
 package org.anystub.examples;
 
+import org.anystub.AnyStubId;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,9 @@ class WorkerTest {
 
 
     @Test
+    @AnyStubId
     void testWorker() {
         int i = worker.numberOfItems();
-        Assertions.assertEquals(50,i);
+        Assertions.assertEquals(51,i);
     }
 }

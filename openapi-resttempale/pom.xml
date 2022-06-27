@@ -91,6 +91,7 @@
                 <executions>
                     <execution>
                         <!-- the wget goal actually binds itself to this phase by default -->
+                        <id>pet-shop-download</id>
                         <phase>initialize</phase>
                         <goals>
                             <goal>wget</goal>
@@ -102,10 +103,24 @@
                             <outputDirectory>${project.build.directory}</outputDirectory>
                         </configuration>
                     </execution>
+                    <execution>
+                        <!-- the wget goal actually binds itself to this phase by default -->
+                        <id>quotes-download</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>wget</goal>
+                        </goals>
+                        <configuration>
+                            <url>https://quotes.rest/yaml/theysaidso.quotes.openapi.yaml?v1.1</url>
+                            <outputFileName>quotes.openapi.yaml</outputFileName>
+                            <!-- default target location, just to demonstrate the parameter -->
+                            <outputDirectory>${project.build.directory}</outputDirectory>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
-                <!--                generate api-->
+                <!--                generate apis-->
                 <groupId>org.openapitools</groupId>
                 <artifactId>openapi-generator-maven-plugin</artifactId>
                 <version>6.0.0</version>
@@ -116,6 +131,7 @@
                 <executions>
                     <execution>
 <!--                        generate petShop API-->
+                        <id>pet-shop-gen</id>
                         <goals>
                             <goal>generate</goal>
                         </goals>
@@ -123,10 +139,35 @@
                             <inputSpec>${project.build.directory}/petstore3.json</inputSpec>
                             <generatorName>java</generatorName>
                             <library>resttemplate</library>
-                            <generateApiTests>false</generateApiTests>
+                            <generateApiTests>true</generateApiTests>
                             <generateModelTests>false</generateModelTests>
-                            <packageName>org.anystub.examples.gen</packageName>
-                            <apiPackage>org.anystub.examples.gen</apiPackage>
+                            <packageName>org.anystub.examples.ps</packageName>
+                            <apiPackage>org.anystub.examples.ps</apiPackage>
+                            <invokerPackage>org.anystub.examples.ps</invokerPackage>
+                            <templateDirectory>src/main/openapi/Java/libraries/resttemplate</templateDirectory>
+                            <configOptions>
+                                <java8>true</java8>
+                                <testOutput>${project.build.directory}/generated-test-sources/openapi</testOutput>
+                            </configOptions>
+                        </configuration>
+                    </execution>
+<execution>
+<!--                        generate quotes API-->
+                        <id>quotes-gen</id>
+
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <inputSpec>${project.basedir}/quotes.openapi.yaml</inputSpec>
+                            <generatorName>java</generatorName>
+                            <library>resttemplate</library>
+                            <generateApiTests>true</generateApiTests>
+                            <generateModelTests>false</generateModelTests>
+                            <packageName>org.anystub.examples.quotes</packageName>
+                            <apiPackage>org.anystub.examples.quotes</apiPackage>
+                            <invokerPackage>org.anystub.examples.quotes</invokerPackage>
+                            <templateDirectory>src/main/openapi/Java/libraries/resttemplate</templateDirectory>
                             <configOptions>
                                 <java8>true</java8>
                                 <testOutput>${project.build.directory}/generated-test-sources/openapi</testOutput>
