@@ -8,3 +8,8 @@ request1:
   keys: [POST, HTTP/1.1, 'http://localhost:49507/api/random/xxx', BASE64 AQIDBA==]
   values: [HTTP/1.1, '200', OK, 'Matched-Stub-Id: b96afbd3-bc9a-4694-a183-b09073edeed4',
     'Vary: Accept-Encoding, User-Agent', 'Transfer-Encoding: chunked', '']
+request2:
+  exception: []
+  keys: [POST, HTTP/1.1, 'http://localhost:55591/api/random/xxx', BASE64 AQIDBA==]
+  values: [HTTP/1.1, '200', OK, 'Matched-Stub-Id: e5536216-6cf5-491a-910d-74b08a729d57',
+    'Vary: Accept-Encoding, User-Agent', 'Transfer-Encoding: chunked', '']

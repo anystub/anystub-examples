@@ -10,3 +10,9 @@ request1:
   values: [HTTP/1.1, '200', OK, 'Content-Type: application/octet-stream', 'Matched-Stub-Id:
       33f2da23-7233-4f10-9654-b7273b99c380', 'Vary: Accept-Encoding, User-Agent',
     'Transfer-Encoding: chunked', response plain string]
+request2:
+  exception: []
+  keys: [GET, HTTP/1.1, 'http://localhost:55591']
+  values: [HTTP/1.1, '200', OK, 'Content-Type: application/octet-stream', 'Matched-Stub-Id:
+      cf4ff84b-f367-446c-b9a1-769d81025c58', 'Vary: Accept-Encoding, User-Agent',
+    'Transfer-Encoding: chunked', response plain string]

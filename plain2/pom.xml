@@ -16,12 +16,5 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.anystub</groupId>
-            <artifactId>anystub-core</artifactId>
-            <version>0.8.2-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
 </project>

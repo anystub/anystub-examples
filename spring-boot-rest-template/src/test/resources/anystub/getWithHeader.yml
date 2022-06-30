@@ -16,3 +16,9 @@ request2:
       */*', 'http://localhost:49507/api/random']
   values: [HTTP/1.1, '200', OK, 'Matched-Stub-Id: 73a2b3bc-dadb-431a-be08-0b6da65ff400',
     'Vary: Accept-Encoding, User-Agent', 'Transfer-Encoding: chunked', '{"test":"ok"}']
+request3:
+  exception: []
+  keys: [GET, HTTP/1.1, 'Accept: text/plain, application/json, application/*+json,
+      */*', 'http://localhost:55591/api/random']
+  values: [HTTP/1.1, '200', OK, 'Matched-Stub-Id: 7795bc0a-7c49-449d-bc12-4bb3e41686c8',
+    'Vary: Accept-Encoding, User-Agent', 'Transfer-Encoding: chunked', '{"test":"ok"}']

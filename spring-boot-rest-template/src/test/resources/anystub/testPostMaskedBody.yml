@@ -8,3 +8,8 @@ request1:
   keys: [POST, HTTP/1.1, 'http://localhost:49507/api/random/xxx', some text... suffix]
   values: [HTTP/1.1, '400', Bad Request, 'Content-Type: application/json', 'Matched-Stub-Id:
       d98c82f3-3a82-432c-af9c-58f33386ccd9', 'Transfer-Encoding: chunked', error]
+request2:
+  exception: []
+  keys: [POST, HTTP/1.1, 'http://localhost:55591/api/random/xxx', some text... suffix]
+  values: [HTTP/1.1, '400', Bad Request, 'Content-Type: application/json', 'Matched-Stub-Id:
+      aa52b88d-26f3-482c-a6e9-3ee48f704bd0', 'Transfer-Encoding: chunked', error]

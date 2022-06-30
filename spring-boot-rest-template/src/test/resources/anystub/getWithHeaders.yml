@@ -10,3 +10,9 @@ request1:
       */*', 'Authorization: tokenxxx', 'Content-Type: application/json', 'http://localhost:49507/api/random']
   values: [HTTP/1.1, '200', OK, 'Matched-Stub-Id: 8c603130-d908-43ac-8210-ca6239e69d69',
     'Vary: Accept-Encoding, User-Agent', 'Transfer-Encoding: chunked', '{"test":"ok"}']
+request2:
+  exception: []
+  keys: [GET, HTTP/1.1, 'Accept: text/plain, application/json, application/*+json,
+      */*', 'Authorization: tokenxxx', 'Content-Type: application/json', 'http://localhost:55591/api/random']
+  values: [HTTP/1.1, '200', OK, 'Matched-Stub-Id: a0fe69ba-1dc7-44be-bb7c-8b243e706c3f',
+    'Vary: Accept-Encoding, User-Agent', 'Transfer-Encoding: chunked', '{"test":"ok"}']

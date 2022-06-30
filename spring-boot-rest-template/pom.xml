@@ -29,7 +29,12 @@
         <dependency>
             <groupId>org.anystub</groupId>
             <artifactId>anystub-core</artifactId>
-            <version>0.8.1-SNAPSHOT</version>
+            <version>0.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.anystub</groupId>
+            <artifactId>anystub</artifactId>
+            <version>0.8.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
