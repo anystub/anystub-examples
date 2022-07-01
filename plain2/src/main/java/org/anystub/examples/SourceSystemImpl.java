@@ -12,9 +12,13 @@ import java.util.stream.Collectors;
 public class SourceSystemImpl implements SourceSystem {
     @Override
     public String get(String arg) throws IOException {
-        URL myURL = new URL("http://localhost:8080/");
+        return somePrivateImplementation(arg);
+    }
+
+    private String somePrivateImplementation(String arg) throws IOException {
+        URL myURL = new URL("https://quotes.rest/qod?language=en");
         URLConnection myURLConnection = myURL.openConnection();
-        myURLConnection.addRequestProperty("X-arg", arg);
+        myURLConnection.setRequestProperty("accept","application/json");
         myURLConnection.connect();
 
 

@@ -22,9 +22,10 @@ class WorkerTest {
     }
 
     @Test
-    @AnyStubId(requestMode = RequestMode.rmFake)
+    @AnyStubId
     void testWorker() throws IOException {
         String s = worker.get();
-        assertEquals("precessed string: 27FbfC1bABfcEaD9GC7b  3G 8CCf2FGcF3f6a56 C1C6 f3dACce60100DFfebFDa", s);
+        assertTrue(s.contains("Winning isn't everything"), "unexpected message: "+s);
+
     }
 }
