@@ -1,8 +1,6 @@
 package org.anystub.examples;
 
 import org.anystub.AnyStubId;
-import org.anystub.RequestMode;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -24,7 +22,7 @@ class WorkerTest {
     @Test
     @AnyStubId
     void testWorker() throws IOException {
-        String s = worker.get();
+        String s = worker.processedData();
         assertTrue(s.contains("Winning isn't everything"), "unexpected message: "+s);
 
     }

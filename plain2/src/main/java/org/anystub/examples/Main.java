@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         SourceSystem sourceSystem = new SourceSystemImpl();
         Worker worker = new Worker(sourceSystem);
-        String s = worker.get();
+        String s = worker.processedData();
         System.out.printf("processed response: %d", s);
     }
 }

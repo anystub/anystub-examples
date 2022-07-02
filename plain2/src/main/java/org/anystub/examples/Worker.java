@@ -11,7 +11,7 @@ public class Worker {
         this.sourceSystem = sourceSystem;
     }
 
-    public String get() throws IOException {
+    public String processedData() throws IOException {
         return "precessed string: "+sourceSystem.get("worker's arg");
     }
 

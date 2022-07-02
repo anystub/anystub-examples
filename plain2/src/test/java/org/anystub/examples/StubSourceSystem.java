@@ -4,7 +4,7 @@ import org.anystub.mgmt.BaseManagerFactory;
 
 import java.io.IOException;
 
-public class StubSourceSystem implements SourceSystem{
+public class StubSourceSystem implements SourceSystem {
 
     final private SourceSystem realSourceSystem;
 
@@ -16,7 +16,7 @@ public class StubSourceSystem implements SourceSystem{
     public String get(String arg) throws IOException {
         return BaseManagerFactory
                 .locate()
-                .request(()-> realSourceSystem.get(arg),
+                .request(() -> realSourceSystem.get(arg),
                         arg);
     }
 }
