@@ -1,0 +1,6 @@
+request0:
+  exception: []
+  keys: [GET, HTTP/1.1, 'http://localhost:8080/api/random']
+  values: [HTTP/1.1, '200', OK, 'x-forward: test', 'Content-Type: application/octet-stream',
+    'Matched-Stub-Id: 1c968725-ed9b-44cd-a59e-53c66a148808', 'Vary: Accept-Encoding,
+      User-Agent', 'Transfer-Encoding: chunked', response from a real system]

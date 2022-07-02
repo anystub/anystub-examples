@@ -1,20 +1,20 @@
 # anystub-examples
 
-[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=org.anystub:anystub&metric=alert_status)](https://sonarcloud.io/dashboard?id=org.anystub:anystub) 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.anystub/anystub/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.anystub/anystub)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=anystub_anystub-examples&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=anystub_anystub-examples)
 
-examples of how to use anystub to record input/output for tests in java
 
-Install from Maven Central 
-===
+Examples of how to use anystub to Record Replay tests
 
-``` xml
-    <dependency>
-      <groupId>org.anystub</groupId>
-      <artifactId>anystub</artifactId>
-      <version>0.7.0</version>
-      <scope>test</scope>
-    </dependency>
-```
 
+
+| Test                                      | Description                                                                   |
+|-------------------------------------------|-------------------------------------------------------------------------------|
+| [Vanilla java](plain)                     | Vanilla Java example. No spring-boot. Stub a handler of random sequence       |
+| [Vanilla java2](plain2)                   | Vanilla Java example. No spring-boot. Stub java.net.URLConnection based class |
+| [RestTemplate](spring-boot-rest-template) | Vanilla Java example. No spring-boot. Stub java.net.URLConnection based class |
+| [WebClient](flux-simple)                  |                                                                               |
+| [WebClient2](flux-simple2)                |                                                                               |
+| [OpenApi](openapi-resttempale)            | Spring-boot app. Two generated client SDKs from swagger spec.                 |
+| [Jdbc]                                    |                                                                               |
+| [JPA]                                     |                                                                               |
 
